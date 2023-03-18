@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#9BDBF8"
+    android:orientation="vertical"
+    tools:context=".ClienteActivity">
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/button49"
+        android:layout_width="50dp"
+        android:layout_height="60dp"
+        android:layout_marginLeft="20dp"
+        android:backgroundTint="#9BDBF8"
+        android:onClick="main"
+        app:cornerRadius="20dp"
+        app:icon="@drawable/ic_baseline_arrow_back_24"
+        android:text="back"
+        />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        app:srcCompat="@mipmap/profile" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:text="Clientes"
+        android:textSize="22sp"
+        android:textStyle="bold"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/bottom_background_green"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/etidentificacion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="Escriba identificacion"
+            android:inputType="number"
+            android:textSize="22sp" />
+
+        <EditText
+            android:id="@+id/etnombre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="Escriba nombre"
+            android:inputType="textPersonName"
+            android:textSize="22dp" />
+
+        <EditText
+            android:id="@+id/etcorreo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="Escriba correo"
+            android:inputType="textEmailAddress"
+            android:textSize="22dp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_gravity="left"
+            android:layout_marginLeft="20dp"
+
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:id="@+id/cbactivo"
+                android:layout_width="wrap_content"
+                android:layout_height="77dp"
+                android:layout_gravity="center_vertical"
+                android:enabled="false"
+                android:textSize="40dp" />
+
+            <Button
+                android:id="@+id/btanular"
+                android:layout_width="120dp"
+                android:layout_height="50dp"
+                style="?attr/materialButtonOutlinedStyle"
+                app:cornerRadius="20dp"
+                app:strokeColor="#9BDBF8"
+                android:onClick="Anular"
+                android:text="Estado"
+                android:textSize="20dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="370dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="35dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/button40"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                style="?attr/materialButtonOutlinedStyle"
+                app:cornerRadius="20dp"
+                app:strokeColor="#9BDBF8"
+                android:onClick="Guardar"
+                android:text="Guardar"
+                android:textSize="25dp" />
+
+            <Button
+                android:id="@+id/button50"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_marginLeft="7dp"
+                android:layout_weight="1"
+                style="?attr/materialButtonOutlinedStyle"
+                app:cornerRadius="20dp"
+                app:strokeColor="#9BDBF8"
+                android:onClick="Consultar"
+                android:text="Consultar"
+                android:textSize="25dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="370dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal">
+
+
+            <Button
+                android:id="@+id/button5"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_marginLeft="7dp"
+                android:layout_weight="1"
+                android:layout_marginTop="5dp"
+                style="?attr/materialButtonOutlinedStyle"
+                app:cornerRadius="20dp"
+                app:strokeColor="#D10A43"
+                android:text="Cancelar"
+                android:textSize="25dp" />
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+</LinearLayout>
